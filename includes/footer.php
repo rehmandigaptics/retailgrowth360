@@ -15,7 +15,7 @@
       <div class="col-6 col-lg-2"><div class="footer-title">Solutions</div><div class="d-flex flex-column gap-3 footer-links"><a href="retail-growth-strategy.php">Strategy</a><a href="demand-marketing.php">Marketing</a><a href="lead-generation.php">Lead Generation</a><a href="web-commerce.php">Web & Commerce</a><a href="crm-automation.php">CRM & Automation</a><a href="gohighlevel.php">GoHighLevel</a><a href="n8n-automation.php">n8n Automation</a><a href="analytics-optimization.php">Analytics</a><a href="customer-experience.php">Customer Experience</a></div></div>
       <div class="col-lg-3"><div class="footer-title">Start a conversation</div><div class="footer-contact-card"><a class="footer-contact-link" href="contact.php"><span>Plan your next growth phase</span><span><i class="bi bi-arrow-up-right"></i></span></a></div></div>
     </div>
-    <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-2"><p class="mb-0">© <span id="year"></span> RetailGrowth360. All rights reserved.</p><p class="mb-0 footer-motto">Built for modern retail growth</p></div>
+    <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-2"><p class="mb-0">© <span id="year"></span> RetailGrowth360. All rights reserved.</p><p class="mb-0 footer-powered">Powered by <a href="https://360growthlab.com/" target="_blank" rel="noopener noreferrer" aria-label="360 Growth Lab"><img src="assets/images/360growthlab.png" alt="360 Growth Lab"></a></p></div>
   </div>
 </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>

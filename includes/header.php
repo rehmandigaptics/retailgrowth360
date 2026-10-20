@@ -28,7 +28,7 @@ $bodyClass = $bodyClass ?? 'inner-page';
         <li class="nav-item"><a class="nav-link <?= $activePage==='about'?'active':'' ?>" href="about.php">About Us</a></li>
         <li class="nav-item dropdown solutions-dropdown">
           <a class="nav-link dropdown-toggle <?= $activePage==='solutions'?'active':'' ?>" href="#" role="button" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">Solutions</a>
-          <ul class="dropdown-menu solutions-menu">
+          <ul class="dropdown-menu solutions-menu" data-lenis-prevent>
             <li><a class="solutions-menu-link solutions-menu-all" href="solutions.php"><i class="bi bi-grid-1x2"></i><span>All solutions</span></a></li>
             <li><a class="solutions-menu-link" href="retail-growth-strategy.php"><i class="bi bi-bullseye"></i><span>Retail Growth Strategy</span></a></li>
             <li><a class="solutions-menu-link" href="demand-marketing.php"><i class="bi bi-megaphone"></i><span>Demand &amp; Digital Marketing</span></a></li>

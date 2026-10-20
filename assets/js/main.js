@@ -1,11 +1,35 @@
 document.getElementById('year').textContent = new Date().getFullYear();
 
   const nav = document.querySelector('.navbar');
-  window.addEventListener('scroll', () => {
+  const updateNav = () => {
     nav.classList.toggle('scrolled', window.scrollY > 40);
-  });
+  };
+  window.addEventListener('scroll', updateNav, {passive:true});
 
   gsap.registerPlugin(ScrollTrigger);
+
+  const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (!prefersReducedMotion) {
+    import('https://cdn.jsdelivr.net/npm/lenis@1.3.17/dist/lenis.mjs').then(({default: Lenis}) => {
+      const lenis = new Lenis({
+        lerp: 0.085,
+        smoothWheel: true,
+        anchors: {offset: -88},
+        autoRaf: false,
+        stopInertiaOnNavigate: true
+      });
+
+      lenis.on('scroll', () => {
+        updateNav();
+        ScrollTrigger.update();
+      });
+
+      gsap.ticker.add((time) => {
+        lenis.raf(time * 1000);
+      });
+      gsap.ticker.lagSmoothing(0);
+    });
+  }
 
   const heroTl = gsap.timeline({defaults:{ease:'power3.out'}});
   heroTl
